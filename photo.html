@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
+      <div class="page-header__logo logo">
         <span>Pink</span>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -72,19 +72,36 @@
       </div>
     </section>
     <section class="post-photo">
-      <form class="post-photo-form">
+      <form class="post-photo-form" action="https://echo.htmlacademy.ru" method="post">
         <img src="http://placehold.it/280x374" width="280" height="374" alt="Зима">
-        <label class="settings__toggle" for="resize-photo"></label>
-        <label class="settings__toggle" for="filter-photo"></label>
-        <label class="settings__toggle" for="bright-photo"></label>
-        <input class="post-photo-form__resize" id="resize-photo" checked>
-        <input class="post-photo-form__filter" id="filter-photo">
-        <input class="post-photo-form__bright" id="bright-photo">
+        <input class="post-photo-form__resize" type="file" id="download-photo">
+        <label class="settings__toggle" for="resize-photo">resize</label>
+        <label class="settings__toggle" for="filter-photo">filter</label>
+        <label class="settings__toggle" for="bright-photo">bright</label>
+        <input class="post-photo-form__resize" name="settings-photo" type="radio" id="resize-photo" checked>
+        <input class="post-photo-form__filter" name="settings-photo" type="radio" id="filter-photo">
+        <input class="post-photo-form__bright" name="settings-photo" type="radio" id="bright-photo">
+        <div class="post-photo-form__btn">
+          <button class="btn btn-post" type="submit" value="Запостить">Запостить</button>
+          <button class="btn btn-cancel" type="submit" value="Отмена">Отмена</button>
+        </div>
       </form>
-      <div class="post-photo-form__btn">
-        <button class="btn btn-post" type="submit" value="Запостить">Запостить</button>
-        <button class="btn btn-cancel" type="submit" value="Отмена">Отмена</button>
-      </div>
     </section>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo logo">
+          <span>Pink</span>
+        </div>
+        <div class="page-footer__social">
+            <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
+            <a class="social-link social-link--tw" href="#">Мы в Твиттере</a>
+            <a class="social-link social-link--youtube" href="#">Мы в Ютуб</a>
+        </div>
+        <div class="page-footer__copyright">
+          <span>Разработано:</span>
+          <a class="btn page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

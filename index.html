@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <title>Пинк</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <a href="index.html">Pink</a>
+        <a href="index.html">
+        <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+        </a>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="btn main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">
+          <span></span>
+        </button>
         <div class="main-nav__wrapper">
-          <ul>
+          <ul class="main-nav__list">
             <li>
               <a>Главная</a>
             </li>
@@ -31,21 +36,28 @@
         </div>
       </nav>
       <div class="page-header__intro page-header--iphone-image">
+        <img src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="iphone">
       </div>
-      <div class="page-header__download-app">
-        <a class="download-app__main-button" href="#">Скачать приложение</a>
+      <div class="page-header__app">
+        <a class="page-header__download-app" href="#">Скачать приложение</a>
         <ul>
           <li>
-            <a class="download-app__app-button" href="#">Appstore</a>
+            <a class="page-header__app-button" href="#">
+              <img src="img/logo-apple.svg" width="46" height="56" alt="Appstore">
+            </a>
           </li>
           <li>
-            <a class="download-app__app-button" href="#">Google Playmarket</a>
+            <a class="page-header__app-button" href="#">
+              <img src="img/logo-android.svg" width="46" height="56" alt="Google Playmarket">
+            </a>
           </li>
           <li>
-            <a class="download-app__app-button" href="#">Winstore</a>
+            <a class="page-header__app-button" href="#">
+              <img src="img/logo-microsoft.svg" width="46" height="56" alt="Winstore">
+            </a>
           </li>
         </ul>
-        <p class="download-app__description">
+        <p class="page-header__description">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </div>
@@ -80,7 +92,7 @@
             Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
           </p>
         </div>
-        <img src="http://placehold.it/157x320" width="157" height="320" alt="iphone-hello-smile">
+        <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="iphone-hello-smile">
       </div>
       <aricle class="reviews">
         <div class="reviews__wrapper slider">

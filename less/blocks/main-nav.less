@@ -1,0 +1,114 @@
+.main-nav
+{
+    &__list
+    {
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+    }
+    & li a
+    {
+        font-weight: bold;
+
+        text-decoration: none;
+
+        color: #fff;
+    }
+    & li
+    {
+        text-align: center;
+        padding: 15px 0;
+        box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.15) inset, 0px 1px 0px 0px rgba(0, 0, 0, 1);
+    }
+    &__toggle
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        display: -webkit-flex;
+        display:         flex;
+
+        width: 60px;
+        height: 60px;
+        padding: 0;
+
+        cursor: pointer;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+
+        border: 0;
+        background: 0 0;
+
+        -webkit-justify-content: center;
+                justify-content: center;
+        -webkit-align-items: center;
+                align-items: center;
+    }
+    &__toggle > span
+    {
+        position: relative;
+
+        display: inline-block;
+
+        width: 30px;
+        height: 3px;
+
+        transition: background .3s .5s;
+        vertical-align: bottom;
+
+        background: #fff;
+    }
+    &__toggle > span::after,
+    &__toggle > span::before
+    {
+        position: absolute;
+        left: 0;
+
+        width: 100%;
+        height: 3px;
+
+        content: '';
+        transition: top .3s .3s,transform .3s;
+        transition: top .3s .3s,transform .3s,-webkit-transform .3s;
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+
+        background: #fff;
+    }
+    &__toggle > span::before
+    {
+        top: 10px;
+    }
+    &__toggle > span::after
+    {
+        top: -10px;
+    }
+}
+.main-nav__toggle > span:active
+{
+    transition: background .3s 0;
+
+    background: 0 0;
+}
+.show-main-nav .main-nav__toggle > span::after,
+.show-main-nav .main-nav__toggle > span::before
+{
+    top: 0;
+
+    transition: top .3s,transform .3s .5s;
+    transition: top .3s,transform .3s .5s,-webkit-transform .3s .5s;
+}
+.show-main-nav .main-nav__toggle > span::before
+{
+    -webkit-transform: rotate3d(0,0,1,45deg);
+            transform: rotate3d(0,0,1,45deg);
+}
+.show-main-nav .main-nav__toggle > span::after
+{
+    -webkit-transform: rotate3d(0,0,1,-45deg);
+            transform: rotate3d(0,0,1,-45deg);
+}

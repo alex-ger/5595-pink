@@ -1,0 +1,37 @@
+.page-header
+{
+    background-color: @palette-primary;
+    &__logo
+    {
+        box-shadow: 0 1px 0 0 rgba(0, 0, 0, 1);
+    }
+    &__intro
+    {
+        position: relative;
+
+        min-height: 395px;
+
+        background-color: @palette-primary;
+        background-image: url('../img/bg-back-mobile@1x.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    &--iphone-image  img
+    {
+        position: absolute;
+        bottom: 0;
+    }
+    &__download-app
+    {
+        padding: 10px 25px;
+
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 50px;
+    }
+    &__description{
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+    }
+}

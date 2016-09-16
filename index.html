@@ -11,12 +11,12 @@
     <header class="page-header">
       <div class="page-header__logo">
         <a href="index.html">
-        <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
         </a>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
-          <span></span>
+        <span></span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -120,25 +120,31 @@
         <input class="slider__input" type="radio" name="price" id="price-input-1">
         <input class="slider__input" type="radio" name="price" id="price-input-2" checked>
         <input class="slider__input" type="radio" name="price" id="price-input-3">
-        <ul class="price__items">
-          <li class="price__item price__item--fast slider__item">
-            <header class="price__items__header">
-              <h3>Стандарт</h3>
-              <span>3,99 USD</span>
-              <ul>
-                <li>
-                  Розовый фильтр
-                </li>
-                <li>
-                  Смайлики
-                </li>
-                <li>
-                  Комментарии
-                </li>
-              </ul>
-            </header>
-          </li>
-        </ul>
+        <table class="price__items">
+          <tbody>
+            <tr class="price__header">
+              <th>
+                <h3>Стандарт</h3>
+                <span>3,99 USD</span>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                Розовый фильтр
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Смайлики
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Комментарии
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <div class="price__toggles slider__toggles">
           <label class="slider__toggle" for="price-input-1">1</label>
           <label class="slider__toggle" for="price-input-2">2</label>

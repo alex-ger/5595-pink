@@ -9,138 +9,163 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <a href="index.html">
-          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-        </a>
-      </div>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-        <span></span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li>
-              <a href="index.html">Главная</a>
-            </li>
-            <li>
-              <a>Фотографии</a>
-            </li>
-            <li>
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li>
-              <a href="https://htmlacademy.ru/" target="blank">Html academy</a>
-            </li>
-          </ul>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <a href="index.html">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          </a>
         </div>
-      </nav>
-      <div class="page-header__intro">
-        <h2>
-        Фотографии пользователей
-        </h2>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+          <img src="img/icon-menu-burger.svg" alt="Меню">
+          <!--<span></span>-->
+          </button>
+          <div class="main-nav__dropdown">
+            <div class="main-nav__dropdown-wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="https://htmlacademy.ru/" target="blank">Html academy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="page-header__intro">
+          <h2>
+          Фотографии пользователей
+          </h2>
+        </div>
       </div>
     </header>
-    <section class="users-photos">
-      <div class="users-photos__title">
-        <p>
-          Взгляните на фотографии, которые выкладывают пользователи!
-          Видите, как не хватает ваших?
-        </p>
+    <div class="page-content">
+      <div class="page-content__wrapper">
+        <section class="users-photos">
+          <div class="users-photos__wrapper">
+            <div class="users-photos__title">
+              <p>
+                Взгляните на фотографии, которые выкладывают пользователи!
+                Видите, как не хватает ваших?
+              </p>
+            </div>
+            <article class="user-post user-post--panorama-day">
+              <h3>Панорама дня</h3>
+              <div class="user-post__photo">
+                <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня - прыжок">
+              </div>
+              <h1 class="user-post__title">Анна <span class="user-photo__time">(5 минут назад)</span></h1>
+              <p class="user-post__comment">
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+              </p>
+              <a class="user-post__like icon-like" href="#">Нравится: 215</a>
+            </article>
+            <article class="user-post">
+              <div class="user-post__photo">
+                <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Автомобиль">
+              </div>
+              <div class="user-post__wrapper">
+                <h1 class="user-post__title">Левон <span class="user-photo__time">(5 часов назад)</span></h1>
+                <p class="user-post__comment">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+                <a class="user-post__like icon-like" href="#">Нравится: 356</a>
+              </div>
+            </article>
+            <article class="user-post">
+              <div class="user-post__photo">
+                <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Барабаны">
+              </div>
+              <div class="user-post__wrapper">
+                <h1 class="user-post__title">Антон <span class="user-photo__time">(12 часов назад)</span></h1>
+                <p class="user-post__comment">
+                  Соседи будут рады!
+                </p>
+                <a class="user-post__like icon-like" href="#">Нравится: 666</a>
+              </div>
+            </article>
+            <article class="user-post">
+              <div class="user-post__photo">
+                <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Потолочное небо">
+              </div>
+              <div class="user-post__wrapper">
+                <h1 class="user-post__title">Борис <span class="user-photo__time">(20 часов назад)</span></h1>
+                <p class="user-post__comment">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+                <a class="user-post__like icon-like" href="#">Нравится: 215</a>
+              </div>
+            </article>
+            <article class="user-post">
+              <div class="user-post__photo">
+                <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча">
+              </div>
+              <div class="user-post__wrapper">
+                <h1 class="user-post__title">Сергей <span class="user-photo__time">(25 часов назад)</span></h1>
+                <p class="user-post__comment">
+                  Самая кубанская в мире!
+                </p>
+                <a class="user-post__like icon-like" href="#">Нравится: 4</a>
+              </div>
+            </article>
+            <article class="user-post">
+              <div class="user-post__photo">
+                <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Ноги">
+              </div>
+              <div class="user-post__wrapper">
+                <h1 class="user-post__title">Максим <span class="user-photo__time">(40 часов назад)</span></h1>
+                <p class="user-post__comment">
+                  Где снег-то?
+                </p>
+                <a class="user-post__like icon-like" href="#">Нравится: 150</a>
+              </div>
+            </article>
+            <article class="user-post">
+              <div class="user-post__photo">
+                <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Полёт">
+              </div>
+              <div class="user-post__wrapper">
+                <h1 class="user-post__title">Надежда <span class="user-photo__time">(45 часов назад)</span></h1>
+                <p class="user-post__comment">
+                  Всем GM и взаимные лайки!
+                </p>
+                <a class="user-post__like icon-like" href="#">Нравится: 2560</a>
+              </div>
+            </article>
+            <div class="users-photos__slogan">
+              <p>
+                Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="post-photo">
+          <div class="post-photo__wrapper">
+            <form class="post-photo-form" action="https://echo.htmlacademy.ru" method="post">
+              <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Зима">
+              <input class="post-photo-form__resize" type="file" id="download-photo">
+              <label class="settings__toggle" for="resize-photo">resize</label>
+              <label class="settings__toggle" for="filter-photo">filter</label>
+              <label class="settings__toggle" for="bright-photo">bright</label>
+              <input class="post-photo-form__resize" name="settings-photo" type="radio" id="resize-photo" checked>
+              <input class="post-photo-form__filter" name="settings-photo" type="radio" id="filter-photo">
+              <input class="post-photo-form__bright" name="settings-photo" type="radio" id="bright-photo">
+              <div class="post-photo-form__btn">
+                <button class="btn btn--post" type="submit" value="Запостить">Запостить</button>
+                <button class="btn btn--cancel" type="submit" value="Отмена">Отмена</button>
+              </div>
+            </form>
+          </div>
+        </section>
       </div>
-      <article class="user-post user-post--panorama-day">
-        <h3>Панорама дня</h3>
-        <div class="user-post__photo">
-          <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня - прыжок">
-        </div>
-        <h1 class="user-post__title">Анна <span class="user-photo__time">(5 минут назад)</span></h1>
-        <p class="user-post__comment">
-          Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-        </p>
-        <a class="user-post__like icon-like" href="#">Нравится: 215</a>
-      </article>
-      <article class="user-post">
-        <div class="user-post__photo">
-          <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Автомобиль">
-        </div>
-        <h1 class="user-post__title">Левон <span class="user-photo__time">(5 часов назад)</span></h1>
-        <p class="user-post__comment">
-          Вчера он на луну летал, сегодня в руки к нам попал.
-        </p>
-        <a class="user-post__like icon-like" href="#">Нравится: 356</a>
-      </article>
-      <article class="user-post">
-        <div class="user-post__photo">
-          <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Барабаны">
-        </div>
-        <h1 class="user-post__title">Антон <span class="user-photo__time">(12 часов назад)</span></h1>
-        <p class="user-post__comment">
-          Соседи будут рады!
-        </p>
-        <a class="user-post__like icon-like" href="#">Нравится: 666</a>
-      </article>
-      <article class="user-post">
-        <div class="user-post__photo">
-          <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Потолочное небо">
-        </div>
-        <h1 class="user-post__title">Борис <span class="user-photo__time">(20 часов назад)</span></h1>
-        <p class="user-post__comment">
-          Здесь могла быть ваша цитата о высоком и вечном.
-        </p>
-        <a class="user-post__like icon-like" href="#">Нравится: 215</a>
-      </article>
-      <article class="user-post">
-        <div class="user-post__photo">
-          <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча">
-        </div>
-        <h1 class="user-post__title">Сергей <span class="user-photo__time">(25 часов назад)</span></h1>
-        <p class="user-post__comment">
-          Самая кубанская в мире!
-        </p>
-        <a class="user-post__like icon-like" href="#">Нравится: 4</a>
-      </article>
-      <article class="user-post">
-        <div class="user-post__photo">
-          <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Ноги">
-        </div>
-        <h1 class="user-post__title">Максим <span class="user-photo__time">(40 часов назад)</span></h1>
-        <p class="user-post__comment">
-          Где снег-то?
-        </p>
-        <a class="user-post__like icon-like" href="#">Нравится: 150</a>
-      </article>
-      <article class="user-post">
-        <div class="user-post__photo">
-          <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Полёт">
-        </div>
-        <h1 class="user-post__title">Надежда <span class="user-photo__time">(45 часов назад)</span></h1>
-        <p class="user-post__comment">
-          Всем GM и взаимные лайки!
-        </p>
-        <a class="user-post__like icon-like" href="#">Нравится: 2560</a>
-      </article>
-      <div class="users-photos__slogan">
-        <p>
-          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
-        </p>
-      </div>
-    </section>
-    <section class="post-photo">
-      <form class="post-photo-form" action="https://echo.htmlacademy.ru" method="post">
-        <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Зима">
-        <input class="post-photo-form__resize" type="file" id="download-photo">
-        <label class="settings__toggle" for="resize-photo">resize</label>
-        <label class="settings__toggle" for="filter-photo">filter</label>
-        <label class="settings__toggle" for="bright-photo">bright</label>
-        <input class="post-photo-form__resize" name="settings-photo" type="radio" id="resize-photo" checked>
-        <input class="post-photo-form__filter" name="settings-photo" type="radio" id="filter-photo">
-        <input class="post-photo-form__bright" name="settings-photo" type="radio" id="bright-photo">
-        <div class="post-photo-form__btn">
-          <button class="btn btn--post" type="submit" value="Запостить">Запостить</button>
-          <button class="btn btn--cancel" type="submit" value="Отмена">Отмена</button>
-        </div>
-      </form>
-    </section>
+    </div>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo logo">

@@ -1,0 +1,58 @@
+body
+{
+    font-family: @open-sans, 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+
+    color: @palette-primary;
+    background-color: #fff;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+label
+{
+    font-size: 14px;
+    line-height: 30px;
+
+    text-transform: uppercase;
+
+    color: @palette-tertiary;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+textarea
+{
+    font-family: @open-sans, 'Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+
+    padding: 5px;
+
+    color: @palette-primary;
+    border: 2px solid #e5e5e5;
+    outline: none;
+    &:focus,
+    {
+        outline: none;
+    }
+}
+input[type='checkbox'] + label,
+input[type='radio'] + label
+{
+    font-size: 18px;
+
+    text-transform: none;
+
+    color: @palette-primary;
+}
+textarea
+{
+    resize: vertical;
+}

@@ -7,7 +7,7 @@
 
         list-style: none;
     }
-    & li a
+    &__link
     {
         font-size: 18px;
         font-weight: bold;
@@ -17,7 +17,7 @@
 
         color: #fff;
     }
-    & li
+    &__item
     {
         padding: 15px 0;
 
@@ -30,27 +30,20 @@
         //position: absolute;
         //top: 0;
         //right: 0;
-
-        display: -webkit-flex;
-        display:         flex;
+        display: flex;
 
         width: 60px;
         height: 60px;
         padding: 0;
 
         cursor: pointer;
-        -webkit-user-select: none;
-           -moz-user-select: none;
-            -ms-user-select: none;
-                user-select: none;
+        user-select: none;
 
         border: 0;
         background: 0 0;
 
-        -webkit-justify-content: center;
-                justify-content: center;
-        -webkit-align-items: center;
-                align-items: center;
+        justify-content: center;
+        align-items: center;
     }
     &__toggle > span
     {
@@ -71,15 +64,13 @@
     {
         //position: absolute;
         //left: 0;
-
         width: 100%;
         height: 3px;
 
         content: '';
         transition: top .3s .3s,transform .3s;
-        transition: top .3s .3s,transform .3s,-webkit-transform .3s;
-        -webkit-transform-origin: 50% 50%;
-                transform-origin: 50% 50%;
+        transition: top .3s .3s,transform .3s;
+        transform-origin: 50% 50%;
 
         background: #fff;
     }
@@ -104,15 +95,13 @@
     top: 0;
 
     transition: top .3s,transform .3s .5s;
-    transition: top .3s,transform .3s .5s,-webkit-transform .3s .5s;
+    transition: top .3s,transform .3s .5s;
 }
 .show-main-nav .main-nav__toggle > span::before
 {
-    -webkit-transform: rotate3d(0,0,1,45deg);
-            transform: rotate3d(0,0,1,45deg);
+    transform: rotate3d(0,0,1,45deg);
 }
 .show-main-nav .main-nav__toggle > span::after
 {
-    -webkit-transform: rotate3d(0,0,1,-45deg);
-            transform: rotate3d(0,0,1,-45deg);
+    transform: rotate3d(0,0,1,-45deg);
 }

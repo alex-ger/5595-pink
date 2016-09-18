@@ -1,0 +1,55 @@
+.btn
+{
+    font-size: 18px;
+    font-weight: normal;
+    font-weight: bold;
+    line-height: 18px;
+
+    display: inline-block;
+
+    padding: 10px 25px;
+
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    &:focus
+    {
+        outline: none;
+    }
+    &--post
+    {
+        padding: 18px 96px;
+
+        color: @palette-tertiary;
+        border: 2px solid @palette-tertiary;
+        border-radius: 50px;
+        background-color: transparent;
+    }
+    &--cancel
+    {
+        padding: 18px 96px;
+
+        color: @btn-cancel;
+        border: 2px solid @btn-cancel;
+        border-radius: 50px;
+        background-color: transparent;
+    }
+    &--history-form
+    {
+        font-size: 18px;
+        line-height: 30px;
+
+        padding: 15px 58px;
+
+        color: @palette-white;
+        background-color: @btn-history-form;
+        text-transform: uppercase;
+        font-family: @open-sans-bold;
+    }
+}

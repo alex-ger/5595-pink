@@ -57,29 +57,29 @@
             vertical-align: bottom;
 
             background: #fff;
-        }
-        & > span::after,
-        & > span::before
-        {
-            //position: absolute;
-            //left: 0;
-            width: 100%;
-            height: 3px;
+            &::after,
+            &::before
+            {
+                //position: absolute;
+                //left: 0;
+                width: 100%;
+                height: 3px;
 
-            content: '';
-            transition: top .3s .3s,transform .3s;
-            transition: top .3s .3s,transform .3s;
-            transform-origin: 50% 50%;
+                content: '';
+                transition: top .3s .3s,transform .3s;
+                transition: top .3s .3s,transform .3s;
+                transform-origin: 50% 50%;
 
-            background: #fff;
-        }
-        & > span::before
-        {
-            top: 10px;
-        }
-        & > span::after
-        {
-            top: -10px;
+                background: #fff;
+            }
+            &::before
+            {
+                top: 10px;
+            }
+            &::after
+            {
+                top: -10px;
+            }
         }
     }
 }

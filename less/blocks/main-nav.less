@@ -15,7 +15,7 @@
 
         text-decoration: none;
 
-        color: #fff;
+        color: @palette-white;
     }
     &__item
     {
@@ -23,7 +23,7 @@
 
         text-align: center;
 
-        box-shadow: 0 1px 0 0 rgba(255, 255, 255, .15) inset, 0 1px 0 0 rgba(0, 0, 0, 1);
+        box-shadow: 0 1px 0 0 @nav-shadow-white inset, 0 1px 0 0 @nav-shadow-black;
     }
     &__toggle
     {
@@ -56,7 +56,7 @@
             transition: background .3s .5s;
             vertical-align: bottom;
 
-            background: #fff;
+            background: @palette-white;
             &::after,
             &::before
             {
@@ -70,7 +70,7 @@
                 transition: top .3s .3s,transform .3s;
                 transform-origin: 50% 50%;
 
-                background: #fff;
+                background: @palette-white;
             }
             &::before
             {

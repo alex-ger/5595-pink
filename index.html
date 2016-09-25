@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Пинк</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -10,59 +11,60 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__logo">
-          <a href="index.html">
-            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-          </a>
-        </div>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button">
-          <img src="img/icon-menu-burger.svg" alt="Меню">
-          <!--<span></span>-->
-          </button>
-          <div class="main-nav__dropdown">
-            <div class="main-nav__dropdown-wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a class="main-nav__link">Главная</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="photo.html">Фотографии</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="form.html">Конкурс</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="https://htmlacademy.ru/" target="blank">Html academy</a>
-                </li>
-              </ul>
+        <div class="page-header__top-wrapper">
+          <div class="page-header__top">
+            <div class="page-header__logo">
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
             </div>
+            <nav class="main-nav main-nav--closed main-nav--nojs">
+              <button class="main-nav__toggle" type="button">Открыть меню</button>
+              <div class="main-nav__dropdown">
+                <div class="main-nav__dropdown-wrapper">
+                  <div class="main-nav__wrapper">
+                    <ul class="main-nav__list">
+                      <li class="main-nav__item">
+                        <a class="main-nav__link">Главная</a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a class="main-nav__link" href="photo.html">Фотографии</a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a class="main-nav__link" href="form.html">Конкурс</a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a class="main-nav__link" href="https://htmlacademy.ru/" target="blank">HTML academy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
           </div>
-        </nav>
+        </div>
         <div class="page-header__intro page-header--iphone-image">
-          <img class="page-header__intro__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="iphone">
+          <img class="page-header__intro-image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="iphone">
         </div>
         <div class="page-header__app">
           <a class="page-header__download-app" href="#">Скачать приложение</a>
-          <ul>
-            <li>
+          <ul class="page-header__app-list">
+            <li class="page-header__app-item">
               <a class="page-header__app-button" href="#">
                 <img src="img/logo-apple.svg" width="46" height="56" alt="Appstore">
               </a>
             </li>
-            <li>
+            <li class="page-header__app-item">
               <a class="page-header__app-button" href="#">
                 <img src="img/logo-android.svg" width="46" height="56" alt="Google Playmarket">
               </a>
             </li>
-            <li>
+            <li class="page-header__app-item">
               <a class="page-header__app-button" href="#">
                 <img src="img/logo-microsoft.svg" width="46" height="56" alt="Winstore">
               </a>
             </li>
           </ul>
           <p class="page-header__description">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8
           </p>
         </div>
       </div>
@@ -72,31 +74,31 @@
         <section class="advantages">
           <div class="advantages__wrapper">
             <div class="advantages__title">
-              <h2 class="advantages__title__item">Устали от серости мегаполиса?</h2>
-              <h2 class="advantages__title__item">Нам есть, что вам предложить!</h2>
+              <h2 class="advantages__title-item">Устали от серости мегаполиса?</h2>
+              <h2 class="advantages__title-item">Нам есть, что вам предложить!</h2>
             </div>
             <div class="advantages__list">
               <div class="advantages__item">
-                <h2>
+                <h2 class="advantages__item-title">
                 Поднимает настроение
                 </h2>
-                <p>
+                <p class="advantages__item-desc">
                   Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
                 </p>
               </div>
               <div class="advantages__item">
-                <h2 class="advantages__item__title">
+                <h2 class="advantages__item-title">
                 Меняет мир вокруг
                 </h2>
-                <p class="advantages__item__desc">
+                <p class="advantages__item-desc">
                   Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
                 </p>
               </div>
               <div class="advantages__item">
-                <h2 class="advantages__item__title">
+                <h2 class="advantages__item-title">
                 Заводит новых друзей
                 </h2>
-                <p class="advantages__item__desc">
+                <p class="advantages__item-desc">
                   Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
                 </p>
               </div>
@@ -139,17 +141,17 @@
                     </th>
                   </tr>
                   <tr>
-                    <td class="price__items_row">
+                    <td class="price__items-row">
                       Розовый фильтр
                     </td>
                   </tr>
                   <tr>
-                    <td class="price__items_row">
+                    <td class="price__items-row">
                       Смайлики
                     </td>
                   </tr>
                   <tr>
-                    <td class="price__items_row">
+                    <td class="price__items-row">
                       Комментарии
                     </td>
                   </tr>
@@ -166,13 +168,19 @@
         <section class="contacts">
           <div class="contacts__wrapper">
             <div class="contacts__info">
-              <h3 class="contacts__info__title">Остались вопросы? Свяжитесь с нами!</h3>
-              <span class="contacts__info__desc">Звоните:</span>
-              <a href="tel:+78125556666">+7 (812) 555-66-66</a>
-              <span class="contacts__info__desc">Пишите:</span>
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-              <span class="contacts__info__desc">Приезжайте в гости:</span>
-              <a class="contacts__info__link" href="https://vk.cc/5B7BDL">ул. Большая Конюшенная, 19/8</a>
+              <h3 class="contacts__title">Остались вопросы? <br> Свяжитесь с нами!</h3>
+              <div class="contacts__info-item">
+                <span class="contacts__desc">Звоните:</span><br>
+                <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              </div>
+              <div class="contacts__info-item">
+                <span class="contacts__desc">Пишите:</span><br>
+                <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </div>
+              <div class="contacts__info-item">
+                <span class="contacts__desc">Приезжайте в гости:</span><br>
+                <a class="contacts__link" href="https://vk.cc/5B7BDL">ул. Большая Конюшенная, 19/8</a>
+              </div>
             </div>
             <div class="contacts__iframe-map">
             </div>
@@ -180,5 +188,6 @@
         </section>
       </div>
     </div>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

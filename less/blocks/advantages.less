@@ -12,6 +12,10 @@
     {
         background-color: @palette-secondary;
     }
+    &__item
+    {
+        margin-bottom: 45px;
+    }
     &__item-title
     {
         font-family: @open-sans-bold;
@@ -22,5 +26,22 @@
     {
         font-size: 14px;
         line-height: 24px;
+    }
+    &__item-iphone
+    {
+        position: relative;
+        z-index: 1;
+
+        width: 100%;
+        height: 280px;
+    }
+    &__item-iphone img
+    {
+        position: absolute;
+        z-index: 1;
+        bottom: -40px;
+        left: 50%;
+
+        transform: translateX(-50%);
     }
 }

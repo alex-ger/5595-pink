@@ -1,6 +1,13 @@
 .page-header
 {
+    position: relative;
+
     min-height: 460px;
+
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
     &__top-wrapper
     {
         height: 65px;
@@ -13,13 +20,10 @@
         position: relative;
         z-index: 2;
 
-        display: -webkit-flex;
-        display:         flex;
-                flex-direction: row;
+        display: flex;
+        flex-direction: row;
 
-        -webkit-flex-direction: row;
-        -webkit-justify-content: space-between;
-                justify-content: space-between;
+        justify-content: space-between;
     }
     &__logo
     {
@@ -37,14 +41,7 @@
     }
     &__intro
     {
-        position: relative;
-
-        height: 460px;
-
-        background-color: #283645;
-        background-image: url(../img/bg-back-mobile@1x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        //height: 460px;
     }
     &__intro-title
     {
@@ -63,6 +60,27 @@
 
         text-align: center;
     }
+    &__app
+    {
+        line-height: 40px;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 50%;
+        margin-top: 200px;
+
+        text-align: center;
+    }
+    @media @tablet-widths
+    {
+        &__intro-image
+        {
+            left: 40%;
+
+            transform: translateX(40%);
+        }
+    }
     @media @mobile-widths-only
     {
         &__app
@@ -72,9 +90,16 @@
             background-color: @palette-primary;
         }
     }
-    &__app
+    &__app-title
     {
-        text-align: center;
+        font-family: @open-sans-light;
+        font-size: 40px;
+        font-weight: normal;
+        line-height: 40px;
+
+        margin: 0;
+
+        color: #fff;
     }
     &__app-list
     {
@@ -93,6 +118,7 @@
 
         display: inline-block;
 
+        max-width: 295px;
         margin-bottom: 30px;
         padding: 10px 25px;
 
@@ -113,5 +139,13 @@
         text-align: center;
 
         color: @palette-white;
+    }
+}
+@media @mobile-widths-only
+{
+    .page-header
+    {
+        background-position: 50% 0;
+        background-size: inherit;
     }
 }

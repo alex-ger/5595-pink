@@ -3,8 +3,23 @@
     text-align: center;
 
     background-color: @palette-secondary;
+    &__title{
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 30px;
+      font-family: @open-sans-bold;
+    }
+    &__cost{
+      text-transform: uppercase;
+      font-size: 24px;
+      line-height: 30px;
+      font-family: @open-sans-light;
+      font-weight: normal;
+    }
     &__items
     {
+        width: 100%;
+
         border-collapse: collapse;
 
         border: 1px solid @palette-border;
@@ -14,8 +29,12 @@
         color: @palette-white;
         background-color: @palette-primary;
     }
-    &__items_row
+    &__items-row
     {
+        padding: 10px 0;
+
+        text-transform: uppercase;
+
         border-bottom: 1px solid @palette-border;
     }
 }

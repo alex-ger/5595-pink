@@ -1,25 +1,39 @@
 .contacts
 {
+    height: 220px;
     min-height: 200px;
+    &__info
+    {
+        display: flex;
+        flex-direction: column;
 
-    background-color: @bgc-contacts;
-    background-image: url('../img/bg-map-mobile@1x.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    &__info__title
+        text-align: center;
+
+        background-color: #fff;
+    }
+    &__title
     {
         font-family: @open-sans-light;
         font-size: 24px;
     }
-    &__info__desc
+    &__desc
     {
         font-family: @open-sans-bold;
         font-size: 18px;
     }
-    &__info__link
+    &__link
     {
+        font-family: @open-sans-light;
         font-size: 24px;
 
         color: @palette-tertiary;
+    }
+    &__iframe-map
+    {
+        background-color: @bgc-contacts;
+        background-image: url('../img/bg-map-mobile@1x.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
     }
 }

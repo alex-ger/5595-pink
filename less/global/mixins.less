@@ -1,0 +1,23 @@
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 640px;
+  }
+
+  @media @desktop-widths {
+    width: 960px;
+  }
+}
+
+.container-fluid () {
+  width: auto;
+
+  @media @tablet-widths {
+    width: 88%;        /* 620px / 700px ~= 88% */
+    max-width: 940px;  /* 940px / .88 ~= 1068px (центровка начнётся чуть раньше 1200px) */
+    margin: 0 auto;
+  }
+
+}
